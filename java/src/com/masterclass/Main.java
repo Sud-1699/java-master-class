@@ -75,5 +75,13 @@ public class Main {
         int o2 = 10;
         o2 += o1;
         System.out.println(o2);
+
+        //String
+        String name = "xyz";
+        System.out.println(name);
+        System.out.println(name.toUpperCase());
+
+        //Access Class, Method and Attributes
+        AccessModifierAndStatic.name = "Access";
     }
 }
