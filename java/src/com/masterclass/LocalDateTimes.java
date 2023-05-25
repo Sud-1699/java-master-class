@@ -3,6 +3,7 @@ package com.masterclass;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
 
 public class LocalDateTimes {
     public static void main(String[] args) {
@@ -29,5 +30,15 @@ public class LocalDateTimes {
         System.out.println(localTime.getHour());
         System.out.println(localTime.getMinute());
         System.out.println(localTime.getSecond());
+
+        //Working with specific date time same code for date as well as time
+        LocalDateTime dateTimeOfPast = LocalDateTime.of(
+                2022,
+                Month.MARCH,
+                1,
+                14,
+                55
+        );
+        System.out.println(dateTimeOfPast);
     }
 }
