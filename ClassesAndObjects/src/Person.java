@@ -3,6 +3,14 @@ import java.util.Objects;
 
 public class Person {
 
+    //working with static
+    public static int count;
+    static {
+        System.out.println("Start: static initialization");
+        count = 0;
+        System.out.println("End: static initialization");
+    }
+
     private String firstName;
     private String lastName;
     private Gender gender;
@@ -10,7 +18,14 @@ public class Person {
     private Address address;
     private Car[] cars;
 
+    //Working with instance initializer
+    {
+        System.out.println("Instance Initializer");
+        count++;
+    }
+
     public Person() {
+        System.out.println("Default Constructor");
     }
 
     public Person(String firstName, String lastName, Gender gender, Address address) {

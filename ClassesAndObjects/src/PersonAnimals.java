@@ -2,6 +2,11 @@ import java.math.BigDecimal;
 
 public class PersonAnimals {
 
+    //working with static
+    static {
+        System.out.println("Static in Main Class");
+    }
+
     public static void main(String[] args) {
         Animal animal1 = new Animal("Maria", 2, "Star White", "Cat");
         Animal animal2 = new Animal("Tommy", 5, "Golden", "Dog");
@@ -13,8 +18,11 @@ public class PersonAnimals {
         Address address1 = new Address("Aprt No.1", "ABC", "XYZ", "Florida", "US", "200314");
         Person person1 = new Person("Alex", "McMathew", Gender.MALE, address1, cars);
         System.out.println(person1);
+        System.out.println(Person.count);
+        System.out.println();
         Address address2 = new Address("Aprt No.2", "ABC", "XYZ", "Florida", "US", "200314");
         Person person2 = new Person("Mary", "Parmar", Gender.FEMALE, animals, address2);
         System.out.println(person2);
+        System.out.println(Person.count);
     }
 }
