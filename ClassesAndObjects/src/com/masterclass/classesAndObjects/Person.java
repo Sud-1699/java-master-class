@@ -1,3 +1,5 @@
+package com.masterclass.classesAndObjects;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -110,7 +112,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "com.masterclass.classesAndObjects.Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", gender=" + gender +

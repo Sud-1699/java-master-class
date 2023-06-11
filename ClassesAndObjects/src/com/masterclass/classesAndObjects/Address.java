@@ -1,3 +1,5 @@
+package com.masterclass.classesAndObjects;
+
 public class Address {
     private String line1;
     private String line2;
@@ -68,7 +70,7 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
+        return "com.masterclass.classesAndObjects.Address{" +
                 "line1='" + line1 + '\'' +
                 ", line2='" + line2 + '\'' +
                 ", district='" + district + '\'' +

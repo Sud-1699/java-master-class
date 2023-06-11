@@ -1,3 +1,5 @@
+package com.masterclass.classesAndObjects;
+
 import java.math.BigDecimal;
 
 public class Car {
@@ -60,7 +62,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "com.masterclass.classesAndObjects.Car{" +
                 "name='" + name + '\'' +
                 ", color='" + color + '\'' +
                 ", model='" + model + '\'' +

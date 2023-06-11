@@ -1,3 +1,5 @@
+package com.masterclass.classesAndObjects;
+
 public class Main {
     public static void main(String[] args) {
         //Working With Classes

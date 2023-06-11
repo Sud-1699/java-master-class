@@ -1,3 +1,5 @@
+package com.masterclass.classesAndObjects;
+
 import java.util.Objects;
 
 public class Animal {
@@ -51,7 +53,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "com.masterclass.classesAndObjects.Animal{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", color='" + color + '\'' +

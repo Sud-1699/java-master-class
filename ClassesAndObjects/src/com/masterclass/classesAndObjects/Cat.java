@@ -1,3 +1,5 @@
+package com.masterclass.classesAndObjects;
+
 import java.util.Objects;
 
 //Classes are Template which use to create new Object
@@ -62,7 +64,7 @@ public class Cat {
     //Get String representation of object NB: toString is override with superclass object
     @Override
     public String toString() {
-        return "Cat{" +
+        return "com.masterclass.classesAndObjects.Cat{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", color='" + color + '\'' +

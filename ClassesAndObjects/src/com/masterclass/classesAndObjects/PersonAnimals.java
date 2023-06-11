@@ -1,14 +1,16 @@
+package com.masterclass.classesAndObjects;
+
 import java.math.BigDecimal;
 
 public class PersonAnimals {
 
     //working with static
     static {
-        System.out.println("Static in Main Class");
+        System.out.println("Static in com.masterclass.classesAndObjects.Main Class");
     }
 
     public static void main(String[] args) {
-        Animal animal1 = new Animal("Maria", 2, "Star White", "Cat");
+        Animal animal1 = new Animal("Maria", 2, "Star White", "com.masterclass.classesAndObjects.Cat");
         Animal animal2 = new Animal("Tommy", 5, "Golden", "Dog");
 
         Animal[] animals = {animal1, animal2};
