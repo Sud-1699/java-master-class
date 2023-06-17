@@ -1,0 +1,11 @@
+# This file contains all kind of data to work
+foo
+bar
+Hello how are you?
+7236489722
+abc@xyz.com
+Jamal
+Sam
+34897901355
+SAM@gmail.com
+xyz@hotmail.org

@@ -1,17 +1,25 @@
 package com.masterclass.oops;
 
 import com.masterclass.oops.encapsulation.BankAccount;
+import com.masterclass.oops.extraction.EmailExtractorReport;
+import com.masterclass.oops.extraction.NumberExtractorReport;
+import com.masterclass.oops.inheritance.Animal;
+import com.masterclass.oops.inheritance.Cat;
+import com.masterclass.oops.inheritance.Dog;
 import com.masterclass.oops.inheritance.Programmer;
 
+import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 
 import static java.math.BigDecimal.TEN;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 //        encapsulation();
-        inheritance();
-     }
+//        inheritance();
+//        abstractKey();
+        extractData();
+    }
 
      public static void encapsulation() {
          BankAccount bankAccount = new BankAccount(
@@ -45,4 +53,18 @@ public class Main {
          System.out.println(jamal.getExperience());
          jamal.sayHello();
      }
+
+     public static void abstractKey() {
+         Animal dog = new Dog("Foo");
+         Animal cat = new Cat("bar");
+         dog.makeSound();
+         cat.makeSound();
+    }
+
+    public static void extractData() throws FileNotFoundException {
+        String path = "OOPs/src/data.txt";
+        new NumberExtractorReport().parseAndSendReport(path);
+        System.out.println();
+        new EmailExtractorReport().parseAndSendReport(path);
+    }
 }
