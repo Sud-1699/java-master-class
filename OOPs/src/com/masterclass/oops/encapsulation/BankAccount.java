@@ -1,4 +1,4 @@
-package com.masterclass.oops;
+package com.masterclass.oops.encapsulation;
 
 import java.math.BigDecimal;
 import java.util.Objects;

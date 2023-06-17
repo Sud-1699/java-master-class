@@ -1,4 +1,4 @@
-package com.masterclass.oops;
+package com.masterclass.oops.encapsulation;
 
 public class Square {
     //Working with encapsulation
