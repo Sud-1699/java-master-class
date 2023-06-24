@@ -7,6 +7,7 @@ import com.masterclass.oops.inheritance.Animal;
 import com.masterclass.oops.inheritance.Cat;
 import com.masterclass.oops.inheritance.Dog;
 import com.masterclass.oops.inheritance.Programmer;
+import com.masterclass.oops.polymorphism.*;
 
 import java.io.FileNotFoundException;
 import java.math.BigDecimal;
@@ -18,7 +19,8 @@ public class Main {
 //        encapsulation();
 //        inheritance();
 //        abstractKey();
-        extractData();
+//        extractData();
+        polymorphism();
     }
 
      public static void encapsulation() {
@@ -66,5 +68,32 @@ public class Main {
         new NumberExtractorReport().parseAndSendReport(path);
         System.out.println();
         new EmailExtractorReport().parseAndSendReport(path);
+    }
+
+    public static void polymorphism() {
+        //Polymorphism => Many Forms
+        /*
+        Car Bicycle Electric-Scooter Example
+        - Car => move, break, getCurrentSpeed
+        - Bicycle => move, break, getCurrentSpeed
+        - ElectricScooter => move, break, getCurrentSpeed
+        */
+
+        Car car = new Car();
+        Bicycle bicycle = new Bicycle();
+        ElectricScooter electricScooter = new ElectricScooter();
+
+        Vehicle[] vehicles = {car, bicycle, electricScooter};
+
+        Person john = new Person("John", vehicles);
+
+        for (Vehicle vehicle : vehicles) {
+            vehicle.move(10);
+            System.out.println(vehicle.getCurrentSpeed());
+            System.out.println();
+        }
+
+        System.out.println(Vehicle.PURCHASE_RATE);
+        System.out.println(car.milesToKm());
     }
 }
