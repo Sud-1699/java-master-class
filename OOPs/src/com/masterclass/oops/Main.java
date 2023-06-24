@@ -1,5 +1,9 @@
 package com.masterclass.oops;
 
+import com.masterclass.oops.dependecyInjection.CarDAO;
+import com.masterclass.oops.dependecyInjection.CarService;
+import com.masterclass.oops.dependecyInjection.EmailService;
+import com.masterclass.oops.dependecyInjection.MOTService;
 import com.masterclass.oops.encapsulation.BankAccount;
 import com.masterclass.oops.extraction.EmailExtractorReport;
 import com.masterclass.oops.extraction.NumberExtractorReport;
@@ -95,5 +99,15 @@ public class Main {
 
         System.out.println(Vehicle.PURCHASE_RATE);
         System.out.println(car.milesToKm());
+    }
+
+    public static void dependencyInjection() {
+        //Dependency
+        CarDAO carDAO = new CarDAO();
+        EmailService emailService = new EmailService();
+        MOTService motService = new MOTService(emailService);
+
+        //Injection
+        CarService carService = new CarService(carDAO, emailService, motService);
     }
 }
