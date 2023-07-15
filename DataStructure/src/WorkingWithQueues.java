@@ -34,6 +34,16 @@ public class WorkingWithQueues {
         System.out.println(queue.size());
     }
 
-    record Person(String name, int age) {}
+//    record Person(String name, int age) {}
+
+    static class Person {
+        String name;
+        int age;
+
+        public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+    }
 
 }
